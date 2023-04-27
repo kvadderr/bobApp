@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="28dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="40dp"
+    android:background="@drawable/modal_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_gravity="right"
+        android:id="@+id/closeModalSendAchievements"
+        android:src="@mipmap/close"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/best"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/noto_sans_regular"
+        android:textColor="#1E1584"
+        android:text="Лучшему сотруднику"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableLeft="@drawable/coin"
+            android:drawablePadding="8dp"
+            android:text="+ 1000"
+            android:textSize="14sp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:textColor="#1E1584"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/karma"
+            android:drawablePadding="8dp"
+            android:text="+ 5000"
+            android:textSize="14sp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:textColor="#1E1584"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/blue_gradient"
+            android:padding="10dp"
+            android:text="Редкий"
+            android:textSize="12sp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="Есть у 10% коллег"
+            android:textSize="12sp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:textColor="#1E1584"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+     <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#524E7D" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/noto_sans_regular"
+        android:textColor="#1E1584"
+        android:textAlignment="center"
+        android:text="Твоя первая диагностика пройдена!
+Теперь ты знаешь как отличить кофейные зерна от растворимого порошка."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/sendAchievement"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/blue_gradient"
+        android:fontFamily="@font/noto_sans_regular"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:textSize="14sp"
+        android:text="Отправить"/>
+
+
+</LinearLayout>

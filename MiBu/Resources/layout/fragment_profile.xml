@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingHorizontal="20dp"
+            android:dividerPadding="12px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/selectAchievements"
+                    android:background="@drawable/selector_blue_bg"
+                    android:padding="27dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/attachmenticon"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:textColor="#1E1584"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/noto_sans_regular"
+                    android:textAlignment="center"
+                    android:text="Отправить достижение"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="100dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/selectCreateTask"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_bg"
+                android:padding="27dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/plusicon"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <TextView
+                    android:layout_marginTop="8dp"
+                    android:textColor="#1E1584"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/noto_sans_regular"
+                    android:textAlignment="center"
+                    android:text="Поставить задачу"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="100dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/selectShare"
+                    android:clickable="true"
+                    android:background="@drawable/selector_blue_bg"
+                    android:padding="27dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/shareicon"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>    
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:textColor="#1E1584"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/noto_sans_regular"
+                    android:textAlignment="center"
+                    android:text="Открыть доступ"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="100dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/light_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/backBtn"
+                android:drawableLeft="@mipmap/back"
+                android:background="@android:color/transparent"
+                android:text="@string/go_back"
+                android:textSize="12sp"
+                android:fontFamily="@font/noto_sans_regular"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#524E7D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/avatar_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/headerText"
+                        android:text="Мария Иванова, 21 год"/>
+                
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/baseText"
+                            android:textColor="#524E7D80"
+                            android:textSize="12sp"
+                            android:text="Официант"/>
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:paddingVertical="6dp"
+                            android:paddingHorizontal="8dp"
+                            style="@style/baseText"
+                            android:text="1 уровень"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:background="@drawable/blue_gradient"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gray_bg"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:showDividers="middle"
+                android:divider="@drawable/divedervertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    
+                    <TextView
+                        android:drawableLeft="@drawable/coin"
+                        android:drawablePadding="8dp"
+                        style="@style/headerText"
+                        android:text="1346" />
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        style="@style/baseText"
+                        android:textColor="#524E7D80"
+                        android:textSize="12sp"
+                        android:text="Всего монет"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    
+                    <TextView
+                        android:drawableLeft="@drawable/karma"
+                        android:drawablePadding="8dp"
+                        style="@style/headerText"
+                        android:text="4567" />
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        style="@style/baseText"
+                        android:textColor="#524E7D80"
+                        android:textSize="12sp"
+                        android:text="За месяц"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    
+                    <TextView
+                        android:drawableLeft="@drawable/karma"
+                        android:drawablePadding="8dp"
+                        style="@style/headerText"
+                        android:text="1346" />
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        style="@style/baseText"
+                        android:textColor="#524E7D80"
+                        android:textSize="12sp"
+                        android:text="Общая"/>
+                    
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/mediumText"
+                        android:text="Место работы:"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="12sp"
+                        style="@style/baseText"
+                        android:text="г.Нальчик, ул. Ленина, 45"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/mediumText"
+                        android:text="Увлечения:"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="12sp"
+                        style="@style/baseText"
+                        android:text="Кошки и футбол"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/mediumText"
+                        android:text="Мечта:"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="12sp"
+                        style="@style/baseText"
+                        android:text="Увидеть Рим"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/invisibleLL"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/mediumText"
+                            android:text="Хочу через 5 лет:"/>
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textSize="12sp"
+                            style="@style/baseText"
+                            android:text="Жить в Париже"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/mediumText"
+                            android:text="Лучшее во мне:"/>
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textSize="12sp"
+                            style="@style/baseText"
+                            android:text="Улыбка"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/visibleBtn"
+                style="@style/baseText"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                android:text="@string/see_all"/>
+        
+        </LinearLayout>
+
+
+         <LinearLayout
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/light_gradient"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/headerText"
+                android:text="Статистика"/>
+
+            <GridLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alignmentMode="alignBounds"
+                android:useDefaultMargins="true"
+                android:columnCount="2">
+            
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/gray_bg"
+                    android:paddingVertical="20dp"
+                    android:gravity="center"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/headerText"
+                        android:textSize="20sp"
+                        android:text="61"/>
+
+                    <TextView
+                        style="@style/baseText"
+                        android:textSize="12sp"
+                        android:text="День отработан"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/gray_bg"
+                    android:paddingVertical="20dp"
+                    android:gravity="center"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/headerText"
+                        android:textSize="20sp"
+                        android:text="356"/>
+
+                    <TextView
+                        style="@style/baseText"
+                        android:textSize="12sp"
+                        android:text="Чеков выбито"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/gray_bg"
+                    android:paddingVertical="20dp"
+                    android:gravity="center"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/headerText"
+                        android:textSize="20sp"
+                        android:text="91"/>
+
+                    <TextView
+                        style="@style/baseText"
+                        android:textSize="12sp"
+                        android:text="Кофе сварен"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/gray_bg"
+                    android:paddingVertical="20dp"
+                    android:gravity="center"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/headerText"
+                        android:textSize="20sp"
+                        android:text="210 673"/>
+
+                    <TextView
+                        style="@style/baseText"
+                        android:textSize="12sp"
+                        android:text="Общая сумма чеков"/>
+
+                </LinearLayout>
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

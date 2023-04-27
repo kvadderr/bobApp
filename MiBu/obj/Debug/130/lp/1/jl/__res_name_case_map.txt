@@ -1,0 +1,2 @@
+drawable/left_cursor_bg.xml;drawable/left_cursor_bg.xml
+values/attrs.xml;values/attrs.xml

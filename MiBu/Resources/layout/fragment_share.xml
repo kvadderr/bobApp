@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/backBtn"
+        android:drawableLeft="@mipmap/back_arrow"
+        android:drawablePadding="20dp"
+        android:background="@android:color/transparent"
+        android:text="Открыть доступ"
+        android:textSize="16sp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#1E1584"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/shareFrame"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

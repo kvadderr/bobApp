@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:drawableLeft="@mipmap/back_arrow"
+            android:drawablePadding="20dp"
+            android:background="@android:color/transparent"
+            android:text="Открыть доступ"
+            android:textSize="16sp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#1E1584"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/baseText"
+                android:text="Задача:"
+                android:textColor="#524E7D99"/>
+
+            <TextView
+                android:textColor="@color/textColor_v1"
+                style="@style/baseText"
+                android:layout_marginLeft="6dp"
+                android:text="Помыть кофемашину"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#524E7D"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/baseText"
+                android:textColor="#524E7D99"
+                android:text="Дедлайн:"/>
+
+            <TextView
+                style="@style/baseText"
+                android:textColor="@color/textColor_v1"
+                android:layout_marginLeft="6dp"
+                android:text="18 июля 2023 г. Один раз"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#524E7D"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/baseText"
+                android:textColor="#524E7D99"
+                android:text="Описание:"/>
+
+            <TextView
+                style="@style/baseText"
+                android:textColor="@color/textColor_v1"
+                android:layout_marginLeft="6dp"
+                android:text="Равным образом, реализация намеченных плановых заданий говорит о возможностях вывода текущих активов."/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#524E7D"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/baseText"
+                android:textColor="#524E7D99"
+                android:text="Монеты:"/>
+
+            <TextView
+                android:textColor="@color/textColor_v1"
+                style="@style/baseText"
+                android:layout_marginLeft="6dp"
+                android:drawableLeft="@drawable/coin"
+                android:drawablePadding="10dp"
+                android:text="+ 400 монет"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#524E7D"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/baseText"
+                android:textColor="#524E7D99"
+                android:text="Карма:"/>
+
+            <TextView
+                android:textColor="@color/textColor_v1"
+                style="@style/baseText"
+                android:layout_marginLeft="6dp"
+                android:drawableLeft="@drawable/karma"
+                android:drawablePadding="10dp"
+                android:text="+ 400 кармы"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#524E7D"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+
+        <Button
+            android:id="@id/saveBtn"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/blue_gradient"
+            android:fontFamily="@font/noto_sans_regular"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:textSize="14sp"
+            android:text="Отправить задачу"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

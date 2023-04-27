@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableLeft="@mipmap/user_add_2"
+            android:drawablePadding="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textColor_v1"
+            android:text="Написать сообщение"
+            style="@style/baseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/closeModalSendAchievements"
+            android:src="@mipmap/close"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f4f4f5">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            style="@style/lightText"
+            android:paddingVertical="10dp"
+            android:textColorHint="#524E7D"
+            android:hint="Поиск..."
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/search"/>
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_marginTop="32dp"
+        style="@style/DefaultCheckBox"
+        android:text="Добавить всех сотрудников"
+        android:paddingStart="10dp"
+        android:textColor="#1E1584"
+        android:fontFamily="@font/noto_sans_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout 
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:src="@drawable/avatar_1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+    
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/FIO"
+            android:textColor="#1E1584"
+            android:layout_marginLeft="8dp"
+            android:text="Андрей Суздальцев"
+            android:textSize="12sp"
+            style="@style/baseText"/>
+
+        <CheckBox
+            android:checked="true"
+            style="@style/DefaultCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#524E7D"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout 
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/avatar_1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+    
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#1E1584"
+            android:layout_marginLeft="8dp"
+            android:text="Андрей Суздальцев"
+            android:textSize="12sp"
+            style="@style/baseText"/>
+
+        <CheckBox
+            android:checked="true"
+            style="@style/DefaultCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#524E7D"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout 
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/avatar_1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+    
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#1E1584"
+            android:layout_marginLeft="8dp"
+            android:text="Андрей Суздальцев"
+            android:textSize="12sp"
+            style="@style/baseText"/>
+
+        <TextView
+            android:textAlignment="textEnd"
+            android:text="Управляющий"
+            android:textColor="#1E1584"
+            android:layout_width="wrap_content"
+            style="@style/lightText"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#524E7D"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout 
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/avatar_1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+    
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#1E1584"
+            android:layout_marginLeft="8dp"
+            android:text="Андрей Суздальцев"
+            android:textSize="12sp"
+            style="@style/baseText"/>
+
+        <TextView
+            android:textAlignment="textEnd"
+            android:text="Управляющий"
+            android:textColor="#1E1584"
+            android:layout_width="wrap_content"
+            style="@style/lightText"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#524E7D"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

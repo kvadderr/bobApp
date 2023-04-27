@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="28dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="40dp"
+    android:background="@drawable/modal_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_gravity="right"
+        android:id="@+id/closeModalSendAchievements"
+        android:src="@mipmap/close"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/newTV"
+        android:layout_marginTop="14dp"
+        android:text="Новая задача"
+        style="@style/headerText"/>
+
+    <TextView
+        android:layout_gravity="right"
+        android:layout_marginTop="14dp"
+        style="@style/baseText"
+        android:text="Осталось 100 символов"
+        android:textSize="10sp"/>
+
+    <EditText
+        android:id="@+id/taskData"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:maxLines="6"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        style="@style/baseText"
+        android:textColorHint="#524E7D"
+        android:hint="Введите название..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@id/saveBtn"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/blue_gradient"
+        android:fontFamily="@font/noto_sans_regular"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:textSize="14sp"
+        android:text="Сохранить"/>
+
+</LinearLayout>
